@@ -170,12 +170,12 @@ class LazyCpuInfoValue {
       }
     }
 
-    has_broken_neon_ =
-      implementer == 0x51 &&
+    has_broken_neon_ = true;
+/*      implementer == 0x51 &&
       architecture == 7 &&
       variant == 1 &&
       part == 0x4d &&
-      revision == 0;
+      revision == 0;*/
   }
 
   const std::string& brand() const { return brand_; }
